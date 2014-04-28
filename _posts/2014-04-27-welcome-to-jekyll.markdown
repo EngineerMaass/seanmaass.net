@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2013-12-09 23:11:56
+date:   2014-04-27 18:53:19
 categories: jekyll update
 ---
 
@@ -19,13 +19,6 @@ print_hi('Tom')
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-### Right aligned images
-
-{:.right}
-![recommendations]({% asset_path posts/zocdoc/recommendations.png %})
-
-Text after aligned images wraps around
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com

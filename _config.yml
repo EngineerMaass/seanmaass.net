@@ -1,7 +1,8 @@
-url: http://adamwalz.net
-name: Swarm Intelligence
-description: Adam Walz Blog and Portfolio
-author: Adam Walz
+url: http://seanmaass.net
+name: Sean Maass' Blog
+title: Sean Maass' Blog
+description: Sean Maass' Blog
+author: Sean Maass
 
 permalink: /blog/:year/:month/:day/:title/
 
@@ -9,7 +10,7 @@ permalink: /blog/:year/:month/:day/:title/
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: adam@adamwalz.net
+email: seanmaass@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -66,13 +67,13 @@ assets:
 # ----------------------- #
 
 # Github repositories
-github_user: adamwalz
+github_user: EngineerMaass
 github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: adamwalz
+twitter_user: SeanMaass
 twitter_tweet_button: true
 
 # Google +1
@@ -81,11 +82,11 @@ google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user: +AdamWalz
+googleplus_user: +SeanMaass
 googleplus_hidden: false
 
 # LinkedIn Profile
-linkedin_user: adamwalz
+linkedin_user:
 
 # Pinboard
 pinboard_user:
@@ -96,15 +97,15 @@ delicious_user:
 delicious_count: 3
 
 # AddThis Sharing Profile
-addthis_profile_id: ra-52bf43f876c34f5f
+addthis_profile_id:
 
 # Disqus Comments
-disqus_short_name: SwarmIntelligence
+disqus_short_name:
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id: UA-40439919-1
-google_analytics_domain_name: adamwalz.net
+google_analytics_tracking_id: UA-50182282-1
+google_analytics_domain_name: seanmaass.net
 
 # Facebook Like
 facebook_like: true
