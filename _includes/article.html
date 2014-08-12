@@ -2,7 +2,7 @@
 {% if index %}
   <div class="row">
     <div class="col-sm-3 col-lg-2">
-      <h5 class="date-time">{% include post/date.html %}<i class="icon-calendar-empty"></i> {{ time }}</h5>
+      <h5 class="date-time">{% include post/date.html %}<i class="fa fa-calendar-o"></i> {{ time }}</h5>
 
       {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
         <a href="{% if index %}{{ site.url }}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments </a>
@@ -11,7 +11,7 @@
 
       {% if post.categories %}
         {% for category in post.categories %}
-          <a href="{{ root_url }}/{{ site.category_dir }}/{{ category | split: " " | join: "-" | downcase }}/"><span class="badge">{{ category }}</span></a>
+          <a href="{{ root_url }}/{{ site.category_dir }}/{{ category | replace:' ','-' | replace:'.','-dot-' | downcase }}/"><span class="badge">{{ category }}</span></a>
         {% endfor %}
       {% endif %}
     </div> <!-- end .col-sm-3 .col-lg-2 -->
@@ -30,9 +30,9 @@
   </div> <!-- end .row -->
 {% else %}
   <header>
-    <div class="jumbotron" role="banner">
+    <div class="post-title" role="banner">
       <h1>{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}<h1>
-      <h5>{% include post/date.html %}<i class="icon-calendar-empty"></i> {{ time }}</h5>
+      <h5>{% include post/date.html %}<i class="fa fa-calendar-o"></i> {{ time }}</h5>
     </div>
   </header>
   <div class="row">

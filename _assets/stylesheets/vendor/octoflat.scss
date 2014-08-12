@@ -1,8 +1,8 @@
 @import "compass";
+@import "font-awesome";
 
 @import "octoflat/colors";
 @import "octoflat/flat-ui";
-@import "fonts/font-awesome";
 
 @mixin selection($bg, $color: inherit, $text-shadow: none){
   * {
@@ -21,21 +21,15 @@ $link-color: lighten(#165b94, 3) !default;
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 .mono { font-family: $mono; }
 
-@import "octoflat/solarized";
 @import "octoflat/syntax";
 @import "octoflat/quotes";
 @import "octoflat/jumbotron";
 
-// Image locations in articles
-article p {
-  &.right > img {
-    float: right;
-  }
-  &.left > img {
-    float: left;
-  }
-  > img {
-    display: block;
-    margin: auto;
-  }
+// Font-Awesome Tweaks
+.social-navbar {
+  font-size: 36px;
+  vertical-align: middle;
+}
+[class^="fa-"], [class*=" fa-"] {
+  line-height: 22px;
 }

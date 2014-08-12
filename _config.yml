@@ -5,6 +5,7 @@ description: Sean Maass' Blog
 author: Sean Maass
 
 permalink: /blog/:year/:month/:day/:title/
+timezone: "America/Phoenix"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
@@ -15,8 +16,7 @@ email: seanmaass@gmail.com
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
-markdown: kramdown
-pygments: true
+highlighter: rouge
 
 exclude:     ["Gemfile*", "Rakefile", "*.sublime-project", "*.sublime-workspace"]
 
@@ -30,6 +30,21 @@ excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of 
 category_dir: categories
 
 titlecase: true       # Converts page and post titles to titlecase
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "post"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "page"
+
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -57,10 +72,31 @@ assets:
   js_compressor:  uglifier
   css_compressor: sass
   sources:
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
     - _assets/fonts
+    - _assets/javascripts
+    - _assets/styleimages
+    - _assets/stylesheets
+
+# ----------------------- #
+#   Jekyll Picture Tag    #
+# ----------------------- #
+picture:
+  source: _assets/images
+  output: assets/images
+  markup: "picture"
+  presets:
+    default: # Full width pictures
+      ppi: [1, 1.5] # switch to 1.5x sized images on devices with a min resolution of 1.5dppx
+      attr:
+        class: "img-responsive center-block"
+      source_lrg:
+        media: "(min-width: 40em)"
+        width: 700
+      source_med:
+        media: "(min-width: 30em)"
+        width: 450
+      source_default:
+        width: 350
 
 # ----------------------- #
 #   3rd Party Settings    #
