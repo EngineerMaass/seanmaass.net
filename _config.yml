@@ -11,7 +11,7 @@ timezone: "America/Phoenix"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: seanmaass@gmail.com
+email: sean@seanmaass.net
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -116,13 +116,13 @@ picture:
 # ----------------------- #
 
 # Github repositories
-github_user: EngineerMaass
+github_user: seanmaass
 github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: SeanMaass
+twitter_user: seanmaass
 twitter_tweet_button: true
 
 # Google +1
@@ -135,7 +135,7 @@ googleplus_user: +SeanMaass
 googleplus_hidden: false
 
 # LinkedIn Profile
-linkedin_user: seandavidmaass
+linkedin_user: seanmaass
 
 # Pinboard
 pinboard_user:
