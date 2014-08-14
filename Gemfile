@@ -11,3 +11,4 @@ gem 'rouge', '~> 1.6'
 
 gem "rubypants", "~> 0.2"
 gem "stringex", "~> 2.5"
+gem 'mini_magick', '~> 3.8'
