@@ -45,6 +45,16 @@ defaults:
     values:
       layout: "page"
 
+sitemap:
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
+    - "403.html"
+    - "404.html"
+    - "405.html"
+    - "5xx.html"
+    - "maintenance.html"
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -78,37 +88,20 @@ assets:
     - _assets/stylesheets
 
 # ----------------------- #
-#   Jekyll Picture Tag    #
+#   Jekyll Image Tag    #
 # ----------------------- #
-picture:
+image:
   source: _assets/images
   output: assets/images
-  markup: "picture"
   presets:
     default: # Full width pictures
-      ppi: [1, 1.5] # switch to 1.5x sized images on devices with a min resolution of 1.5dppx
       attr:
         class: "img-responsive center-block"
-      source_lrg:
-        media: "(min-width: 40em)"
-        width: 700
-      source_med:
-        media: "(min-width: 30em)"
-        width: 450
-      source_default:
-        width: 350
+      width: 350
     half: # Half width pictures
-      ppi: [1, 1.5] # switch to 1.5x sized images on devices with a min resolution of 1.5dppx
       attr:
         class: "img-responsive center-block"
-      source_lrg:
-        media: "(min-width: 40em)"
-        width: 400
-      source_med:
-        media: "(min-width: 30em)"
-        width: 250
-      source_default:
-        width: 200
+      width: 200
 
 
 # ----------------------- #
